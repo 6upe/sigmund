@@ -48,7 +48,7 @@ export default function Header() {
                   </div>
                   <div className="ms-2">
                     <h6 className="text-primary mb-0">Call Us</h6>
-                    <span className="text-white">[Insert Phone Number]</span>
+                    <span className="text-white">+260 964050710 / 0953414582</span>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function Header() {
                   </div>
                   <div className="ms-2">
                     <h6 className="text-primary mb-0">Email Us</h6>
-                    <span className="text-white">[Insert School Email]</span>
+                    <span className="text-white">sigmundtrustschool@gmail.com</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function Header() {
                   </div>
                   <div className="ms-2">
                     <h6 className="text-primary mb-0">Visit Us</h6>
-                    <span className="text-white">[Insert Physical Address]</span>
+                    <span className="text-white">20 CHIBOLYA STREET, TWIBUKISHE, OPPOSITE KITWE TRADES.</span>
                   </div>
                 </div>
               </div>
@@ -100,10 +100,9 @@ export default function Header() {
               <div className="navbar-nav me-auto">
                 <Link href="/" className="nav-item nav-link active">Home</Link>
                 <a href="#about" className="nav-item nav-link">About</a>
-                <a href="#academics" className="nav-item nav-link">Academics</a>
+                <Link href="academy" className="nav-item nav-link">Academics</Link>
                 <a href="#school-life" className="nav-item nav-link">School Life</a>
                 <a href="#admissions" className="nav-item nav-link">Admissions</a>
-                <a href="#parents" className="nav-item nav-link">Parents</a>
                 <a href="#contact" className="nav-item nav-link">Contact</a>
               </div>
               <div className="d-none d-lg-flex ms-auto">

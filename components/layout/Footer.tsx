@@ -8,13 +8,13 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <h4 className="text-light mb-4">Contact Us</h4>
               <p className="mb-2">
-                <i className="fa fa-map-marker-alt me-3"></i>[Insert Physical Address]
+                <i className="fa fa-map-marker-alt me-3"></i>20 CHIBOLYA STREET, TWIBUKISHE, OPPOSITE KITWE TRADES.
               </p>
               <p className="mb-2">
-                <i className="fa fa-phone-alt me-3"></i>[Insert Phone Number]
+                <i className="fa fa-phone-alt me-3"></i>+260 964050710 / 0953414582
               </p>
               <p className="mb-2">
-                <i className="fa fa-envelope me-3"></i>[Insert School Email]
+                <i className="fa fa-envelope me-3"></i>sigmundtrustschool@gmail.com
               </p>
               <p className="mb-2">
                 <i className="fa fa-globe me-3"></i>www.sigmund.com
