@@ -31,7 +31,7 @@ export default function Header() {
                 className="img-fluid"
                 style={{ maxHeight: '60px', width: 'auto' }}
               />
-              <div className="ms-2 d-none d-md-block">
+              <div className="ms-2 d-md-block">
                 <p className="text-white small m-0 fw-bold">Sigmund Trust School</p>
                 <p className="text-white small m-0">
                   Learners of Today, Leaders of Tomorrow
