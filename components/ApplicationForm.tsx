@@ -55,36 +55,70 @@ export default function ApplicationForm() {
             <div className="h-100 p-5">
               <h3 className="text-dark mb-4">Admissions Inquiry</h3>
               {/* Toggle for applicant type */}
-              <div className="mb-4 d-flex justify-content-center gap-4">
-                <div className="form-check form-check-inline">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="applicantType"
-                    id="studentRadio"
-                    value="student"
-                    checked={applicantType === "student"}
-                    onChange={() => setApplicantType("student")}
-                  />
-                  <label className="form-check-label" htmlFor="studentRadio">
-                    I am the Student
-                  </label>
-                </div>
-                <div className="form-check form-check-inline">
-                  <input
-                    className="form-check-input"
-                    type="radio"
-                    name="applicantType"
-                    id="guardianRadio"
-                    value="guardian"
-                    checked={applicantType === "guardian"}
-                    onChange={() => setApplicantType("guardian")}
-                  />
-                  <label className="form-check-label" htmlFor="guardianRadio">
-                    I am a Guardian
-                  </label>
-                </div>
-              </div>
+              <div className="mb-4 d-flex justify-content-center">
+  <div
+    style={{
+      display: "flex",
+      borderRadius: "2rem",
+      background: "#f1f3f6",
+      boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+      overflow: "hidden",
+      border: "1px solid #e0e0e0",
+      width: "340px",
+      fontWeight: 500,
+    }}
+  >
+    <label
+      htmlFor="studentRadio"
+      style={{
+        flex: 1,
+        padding: "0.75rem 1.5rem",
+        cursor: "pointer",
+        background: applicantType === "student" ? "#fff" : "transparent",
+        color: applicantType === "student" ? "#0d6efd" : "#333",
+        fontWeight: applicantType === "student" ? 700 : 500,
+        borderRight: "1px solid #e0e0e0",
+        textAlign: "center",
+        transition: "background 0.2s, color 0.2s",
+      }}
+    >
+      <input
+        type="radio"
+        name="applicantType"
+        id="studentRadio"
+        value="student"
+        checked={applicantType === "student"}
+        onChange={() => setApplicantType("student")}
+        style={{ display: "none" }}
+      />
+      I am the Student
+    </label>
+    <label
+      htmlFor="guardianRadio"
+      style={{
+        flex: 1,
+        padding: "0.75rem 1.5rem",
+        cursor: "pointer",
+        background: applicantType === "guardian" ? "#fff" : "transparent",
+        color: applicantType === "guardian" ? "#0d6efd" : "#333",
+        fontWeight: applicantType === "guardian" ? 700 : 500,
+        textAlign: "center",
+        transition: "background 0.2s, color 0.2s",
+      }}
+    >
+      <input
+        type="radio"
+        name="applicantType"
+        id="guardianRadio"
+        value="guardian"
+        checked={applicantType === "guardian"}
+        onChange={() => setApplicantType("guardian")}
+        style={{ display: "none" }}
+      />
+      I am a Guardian
+    </label>
+  </div>
+</div>
               <form>
                 <div className="row g-3">
                   {applicantType === "student" ? (
